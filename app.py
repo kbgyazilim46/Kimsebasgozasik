@@ -1,5 +1,4 @@
 from flask import Flask
-import textwrap
 
 app = Flask(__name__)
 
@@ -13,10 +12,10 @@ def home():
     kimsebasgoz_link = "https://instagram.com/_hayalet.bas.krc.kimsebasgoz_"
     hira_link = "https://instagram.com/1.smyfy7"
     
-    video_url = "https://drive.google.com/file/d/1--PtE0SSYdy-bbiqmGIr5TXx-qoC-fTp/view?usp=drivesdk"
-    music_url = "https://drive.google.com/file/d/1-Mr-7ZqLZGKdCIQMqDScRubXqFI7E24v/view?usp=drivesdk"
+    video_url = "https://drive.google.com/uc?export=download&id=1--PtE0SSYdy-bbiqmGIr5TXx-qoC-fTp"
+    music_url = "https://drive.google.com/uc?export=download&id=1-Mr-7ZqLZGKdCIQMqDScRubXqFI7E24v"
 
-    html_content = f"""
+    return f"""
     <!DOCTYPE html>
     <html lang="tr">
     <head>
@@ -85,8 +84,6 @@ def home():
     </body>
     </html>
     """
-
-    return textwrap.dedent(html_content)
 
 if __name__ == "__main__":
     app.run()
