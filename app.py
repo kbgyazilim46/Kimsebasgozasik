@@ -13,7 +13,7 @@ def home():
     hira_link = "https://instagram.com/1.smyfy7"
 
 
-video_url = https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitevideosu.mp4"
+video_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitevideosu.mp4"
     
 music_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitemuzigi.mp3"
 
