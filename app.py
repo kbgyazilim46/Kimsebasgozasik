@@ -1,4 +1,5 @@
 from flask import Flask
+import textwrap
 
 app = Flask(__name__)
 
@@ -11,14 +12,11 @@ def home():
     
     kimsebasgoz_link = "https://instagram.com/_hayalet.bas.krc.kimsebasgoz_"
     hira_link = "https://instagram.com/1.smyfy7"
-
-
-video_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitevideosu.mp4"
     
-music_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitemuzigi.mp3"
+    video_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitevideosu.mp4"
+    music_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitemuzigi.mp3"
 
-
-    return f"""
+    html_content = f"""
     <!DOCTYPE html>
     <html lang="tr">
     <head>
@@ -82,11 +80,13 @@ music_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main
             <p><strong>KİMSEBASGOZ IG:</strong>
                 <a class="ig" href="{kimsebasgoz_link}" target="_blank">{kimsebasgoz_ig}</a></p>
             <p><strong>HİRA IG:</strong>
-                <a class="ig" href="{smyfy7_link}" target="_blank">{hira_ig}</a></p>
+                <a class="ig" href="{hira_link}" target="_blank">{hira_ig}</a></p>
         </div>
     </body>
     </html>
     """
+
+    return textwrap.dedent(html_content)
 
 if __name__ == "__main__":
     app.run()
