@@ -13,8 +13,8 @@ def home():
     kimsebasgoz_link = "https://instagram.com/_hayalet.bas.krc.kimsebasgoz_"
     hira_link = "https://instagram.com/1.smyfy7"
     
-    video_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitevideosu.mp4"
-    music_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitemuzigi.mp3"
+    video_url = "https://drive.google.com/file/d/1--PtE0SSYdy-bbiqmGIr5TXx-qoC-fTp/view?usp=drivesdk"
+    music_url = "https://drive.google.com/file/d/1-Mr-7ZqLZGKdCIQMqDScRubXqFI7E24v/view?usp=drivesdk"
 
     html_content = f"""
     <!DOCTYPE html>
