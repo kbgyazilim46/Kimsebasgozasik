@@ -12,8 +12,8 @@ def home():
     kimsebasgoz_link = "https://instagram.com/_hayalet.bas.krc.kimsebasgoz_"
     hira_link = "https://instagram.com/1.smyfy7"
     
-    video_url = "https://drive.google.com/uc?export=download&id=1--PtE0SSYdy-bbiqmGIr5TXx-qoC-fTp"
-    music_url = "https://drive.google.com/uc?export=download&id=1-Mr-7ZqLZGKdCIQMqDScRubXqFI7E24v"
+    video_url = "https://cdn.pixabay.com/vimeo/432585628/Golden_Sunset_9603.mp4?width=1280&hash=f2e5d92f0b9d5a42fa8b9d4b1b3e2f2f4d25f35e"
+    music_url = "https://cdn.pixabay.com/download/audio/2022/03/20/audio_4997b5518c.mp3?filename=romantic-piano-11244.mp3"
 
     return f"""
     <!DOCTYPE html>
@@ -64,7 +64,7 @@ def home():
         </style>
     </head>
     <body>
-        <video autoplay muted loop>
+        <video autoplay muted loop playsinline>
             <source src="{video_url}" type="video/mp4">
             Tarayıcınız video formatını desteklemiyor.
         </video>
