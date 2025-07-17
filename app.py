@@ -5,21 +5,19 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     message = "KİMSEBASGOZ HİRAYA AŞIK ❤️❤️❤️❤️❤️❤️❤️"
-    
     kimsebasgoz_ig = "@_HAYALET.BAS.KRC.KIMSEBASGOZ_"
     hira_ig = "@1.SMYFY7"
-    
     kimsebasgoz_link = "https://instagram.com/_hayalet.bas.krc.kimsebasgoz_"
     hira_link = "https://instagram.com/1.smyfy7"
-    
-    video_url = "https://cdn.pixabay.com/vimeo/432585628/Golden_Sunset_9603.mp4?width=1280&hash=f2e5d92f0b9d5a42fa8b9d4b1b3e2f2f4d25f35e"
-    music_url = "https://cdn.pixabay.com/download/audio/2022/03/20/audio_4997b5518c.mp3?filename=romantic-piano-11244.mp3"
+
+    video_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitevideosu.mp4"
+    music_url = "https://raw.githubusercontent.com/kbgyazilim46/Kimsebasgozasik/main/sitemuzigi.mp3"
 
     return f"""
     <!DOCTYPE html>
     <html lang="tr">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>KİMSEBASGOZ ❤️ HİRA</title>
         <style>
             html, body {{
@@ -65,12 +63,12 @@ def home():
     </head>
     <body>
         <video autoplay muted loop playsinline>
-            <source src="{video_url}" type="video/mp4">
+            <source src="{video_url}" type="video/mp4" />
             Tarayıcınız video formatını desteklemiyor.
         </video>
 
         <audio autoplay loop>
-            <source src="{music_url}" type="audio/mpeg">
+            <source src="{music_url}" type="audio/mpeg" />
             Tarayıcınız ses formatını desteklemiyor.
         </audio>
 
@@ -86,4 +84,4 @@ def home():
     """
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
